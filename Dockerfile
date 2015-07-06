@@ -5,7 +5,7 @@ FROM resin/armv7hf-debian:latest
 MAINTAINER Shaun Mulligan <shaun@resin.io>
 
 #Install python2 and pip
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -yq --no-install-recommends \
 		python \
 		python-dev \
 		python-dbus \
