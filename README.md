@@ -21,7 +21,7 @@ It should take a few minutes for the code to push. While you wait, lets enable d
 ![Actions Tab](/img/enable-public-URLs.png)
 
 Once the device is updated, you should see this in your logs:
-![log output](/img/log-ouput.png)
+![log output](/img/log-output.png)
 
 Then you your browser you should be able to open the device URL link and see the message "Hello World!".
 
