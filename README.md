@@ -20,6 +20,12 @@ It should take a few minutes for the code to push. While you wait, lets enable d
 <!-- TODO: update images when port 8080 is deprecated. -->
 ![Actions Tab](/img/enable-public-URLs.png)
 
+Once the device is updated, you should see this in your logs:
+![log output](/img/log-ouput.png)
+
+Then you your browser you should be able to open the device URL link and see the message "Hello World!".
+
+
 [resin-link]:https://resin.io/
 [signup-page]:https://dashboard.resin.io/signup
 [gettingStarted-link]:http://docs.resin.io/#/pages/installing/gettingStarted.md
