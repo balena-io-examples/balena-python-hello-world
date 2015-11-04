@@ -1,4 +1,3 @@
-#Get the latest armv7 base image from
 FROM resin/%%RESIN_MACHINE_NAME%%-python
 
 MAINTAINER Shaun Mulligan <shaun@resin.io>
@@ -8,7 +7,7 @@ ENV INITSYSTEM on
 
 # pip install python deps from requirements.txt
 # For caching until requirements.txt changes
-ADD ./requirements.txt /requirements.txt
+COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
 COPY . /usr/src/app
