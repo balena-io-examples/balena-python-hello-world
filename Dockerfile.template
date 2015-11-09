@@ -14,4 +14,4 @@ COPY . /usr/src/app
 WORKDIR /usr/src/app
 
 #run main.py when the container starts
-CMD ["python","/usr/src/app/src/main.py"]
+CMD ["python","src/main.py"]
