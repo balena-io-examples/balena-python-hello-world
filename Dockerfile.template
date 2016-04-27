@@ -8,9 +8,6 @@ FROM resin/%%RESIN_MACHINE_NAME%%-python
 #    alsa-utils libasound2-dev && \
 #    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# switch on systemd init system in container
-ENV INITSYSTEM on
-
 # Set our working directory
 WORKDIR /usr/src/app
 
@@ -22,6 +19,9 @@ RUN pip install -r /requirements.txt
 
 # This will copy all files in our root to the working  directory in the container
 COPY . ./
+
+# switch on systemd init system in container
+ENV INITSYSTEM on
 
 # main.py will run when container starts up on the device
 CMD ["python","src/main.py"]
