@@ -16,9 +16,9 @@ and push the code to the newly added remote:
 ```
 $ git push resin master
 ```
-It should take a few minutes for the code to push. While you wait, lets enable device URLs so we can see the server outside of our local network. This option can be found in the `Actions` tab in your device dashboard.
-<!-- TODO: update images when port 8080 is deprecated. -->
-![Actions Tab](/img/enable-public-URLs.png)
+It should take a few minutes for the code to push. While you wait, lets enable device URLs so we can see the server outside of our local network. This option can be toggled on the device summary page, pictured below or in the `Actions` tab in your device dashboards.
+
+![Enable device URL](/img/enable-public-URLs.png)
 
 Once the device is updated, you should see this in your logs:
 ![log output](/img/log-output.png)
