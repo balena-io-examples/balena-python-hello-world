@@ -1,31 +1,30 @@
-## A Simple Server with Python Flask
+# A Simple Server with Python Flask
 
-This is a simple skeleton Flask server project that works on any of the devices supported by [balena][balena-link].
+This is a simple skeleton [Flask][flask] server project that works on any of the
+devices supported by [balena][balena-link].
 
-This project simply serves up `"Hello World!"` on port `:80` of your balena device.
+This project simply serves up `"Hello World!"` on port `:80` of your balena
+device.
 
-To get this project up and running, you will need to signup for a balena account [here][signup-page] and set up a device, have a look at our [Getting Started tutorial][gettingStarted-link]. Once you are set up with balena, you will need to clone this repo locally:
-```
-$ git clone git@github.com:balena-projects/simple-server-python.git
-```
-Then add your balena application's remote:
-```
-$ git remote add balena username@git.balena-cloud.com:username/myapp.git
-```
-and push the code to the newly added remote:
-```
-$ git push balena master
-```
-It should take a few minutes for the code to push. While you wait, lets enable device URLs so we can see the server outside of our local network. This option can be toggled on the device summary page, pictured below or in the `Actions` tab in your device dashboards.
+## balena Setup & Deployment
 
-![Enable device URL](/img/enable-public-URLs.png)
+To get this project up and running, you will need to signup for a balena account
+[here][signup-page] and set up an application and device. You'll find full
+details in our [Getting Started tutorial][gettingStarted-link].
 
-Once the device is updated, you should see this in your logs:
-![log output](/img/log-output.png)
+Once you have downloaded this project, you can `balena push` it using the
+[balenaCLI][balena-cli]. This command will package up and push the code to the
+balena builders, where it will be compiled and built and deployed to every
+device in the application fleet. When it completes, you'll have your Python code
+running on your device and see some logs on your [balenaCloud
+dashboard][balena-dashboard].
 
-Then in your browser you should be able to open the device URL and see the message "Hello World!".
+To give your device a public URL, access the device page on the [balenaCloud
+dashboard][balena-dashboard], and choose the Public Device URL toggle.
+Alternatively, you can point your browser to your device's IP address.
 
-
-[balena-link]:https://balena.io/
+[flask]:https://www.palletsprojects.com/p/flask/
 [signup-page]:https://dashboard.balena-cloud.com/signup
-[gettingStarted-link]:http://balena.io/docs/learn/getting-started/
+[gettingStarted-link]:https://www.balena.io/docs/learn/getting-started/raspberrypi3/cpp/
+[balena-cli]:https://www.balena.io/docs/reference/cli/
+[balena-dashboard]:https://dashboard.balena-cloud.com/
