@@ -1,36 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@maryamantikchi 
-ecoation-archive
-/
-root-fw-balenaTest
-Private
-0
-00
- Code
- Issues 0
- Pull requests 0 Actions
- Projects 0
- Security 0
- Insights
- Settings
-f
-master @maryamantikchi  a66b097
- 
-BalenaCloud Push
-on: push
- 
-BalenaCloud Push
-This run
-Workflow file
- 
-.github/workflows/main.yml
 name: BalenaCloud Push
 
 on:
