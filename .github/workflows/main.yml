@@ -1,0 +1,52 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@maryamantikchi 
+ecoation-archive
+/
+root-fw-balenaTest
+Private
+0
+00
+ Code
+ Issues 0
+ Pull requests 0 Actions
+ Projects 0
+ Security 0
+ Insights
+ Settings
+f
+master @maryamantikchi  a66b097
+ 
+BalenaCloud Push
+on: push
+ 
+BalenaCloud Push
+This run
+Workflow file
+ 
+.github/workflows/main.yml
+name: BalenaCloud Push
+
+on:
+  push:
+    # Only run workflow for pushes to specific branches
+    branches:
+      - master
+
+jobs:
+  balena-push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1.1.0
+    - uses: theaccordance/balena-push@v1.0.0
+      with:
+        api-token: ${{secrets.BALENA_API_TOKEN}}
+        application-name: ${{secrets.BALENA_APPLICATION_NAME}}
+        application-path: "./"
