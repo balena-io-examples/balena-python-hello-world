@@ -2,7 +2,7 @@
 
 [![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balena-io-examples/balena-python-hello-world)
 
-This is a simple skeleton Flask server project that works on any of the devices supported by [balena][balena-link].
+This is a simple skeleton [Flask][flask] server project that works on any of the devices supported by [balena][balena-link].
 
 This project serves up a Welcome page on port `:80` of your balena device.
 
@@ -18,6 +18,8 @@ balena push <FLEET_NAME>
 To give your device a public URL, access the device page on the [balenaCloud dashboard][balena-dashboard], and choose the _Public Device URL_ toggle. Alternatively, you can point your browser to your device's IP address.
 
 Once the device is updated, check the Public Device URL to find the welcome page showing up from your device. 
+
+[flask]:https://www.palletsprojects.com/p/flask/
 
 [balena-link]:https://balena.io/
 [signup-page]:https://dashboard.balena-cloud.com/signup
