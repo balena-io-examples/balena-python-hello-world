@@ -1,31 +1,26 @@
-## A Simple Server with Python Flask
+# A Simple Server with Python Flask
 
-This is a simple skeleton Flask server project that works on any of the devices supported by [balena][balena-link].
+[![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balena-io-examples/balena-python-hello-world)
 
-This project simply serves up `"Hello World!"` on port `:80` of your balena device.
+This is a simple skeleton python server project that works on any of the [devices supported][devices-supported] by [balena][balena-link].
 
-To get this project up and running, you will need to signup for a balena account [here][signup-page] and set up a device, have a look at our [Getting Started tutorial][gettingStarted-link]. Once you are set up with balena, you will need to clone this repo locally:
+This project serves up a welcome page on port `:80` of your balena device.
+
+To get this project up and running, you will need to [sign-up][signup-page] for a balena account. Have a look at our [Getting Started tutorial][gettingStarted-link] to help you kickstart your journey in creating a fleet of devices. Once you are set up with balena, you will need to clone or download this repository. 
+
+After downloading, navigate to the directory and run the `balena push` command using the [balena CLI][balena-cli]. This command will package up and push the code to the balena builders, where it will be compiled, built and deployed to every device in the fleet. When it completes, you'll have a python powered web server running on your device and you can see some logs on your [device dashboard][balena-dashboard].
+
+```bash
+cd balena-python-hello-world/
+balena push <FLEET_NAME>
 ```
-$ git clone git@github.com:balena-projects/simple-server-python.git
-```
-Then add your balena application's remote:
-```
-$ git remote add balena username@git.balena-cloud.com:username/myapp.git
-```
-and push the code to the newly added remote:
-```
-$ git push balena master
-```
-It should take a few minutes for the code to push. While you wait, lets enable device URLs so we can see the server outside of our local network. This option can be toggled on the device summary page, pictured below or in the `Actions` tab in your device dashboards.
 
-![Enable device URL](/img/enable-public-URLs.png)
-
-Once the device is updated, you should see this in your logs:
-![log output](/img/log-output.png)
-
-Then in your browser you should be able to open the device URL and see the message "Hello World!".
+To give your device a public URL, access the device page on the [balenaCloud dashboard][balena-dashboard], and choose the _Public Device URL_ toggle. Once the device is updated, check the Public Device URL to find the welcome page showing up from your device. That's it, you have deployed your first balena device!
 
 
-[balena-link]:https://balena.io/
+[balena-cli]:https://www.balena.io/docs/reference/cli/
+[balena-dashboard]:https://dashboard.balena-cloud.com/
+[balena-link]:https://balena.io/ 
+[devices-supported]:https://www.balena.io/docs/reference/hardware/devices/
+[gettingStarted-link]:https://www.balena.io/docs/learn/getting-started/raspberrypi3/python/
 [signup-page]:https://dashboard.balena-cloud.com/signup
-[gettingStarted-link]:http://balena.io/docs/learn/getting-started/
