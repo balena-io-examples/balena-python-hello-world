@@ -1,5 +1,6 @@
 name: balena-python-hello-world
 type: sw.application
+joinable: false
 description: >-
   This is a simple skeleton python server that works on any of the devices
   supported by balena. It also serves as a boilerplate project for you to get
