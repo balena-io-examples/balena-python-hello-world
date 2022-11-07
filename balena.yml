@@ -2,9 +2,9 @@ name: balena-python-hello-world
 type: sw.application
 joinable: false
 description: >-
-  This is a simple skeleton python server that works on any of the
-  devices supported by balena. It also serves as a boilerplate project for you
-  to get started on building your fleet. Have fun! 
+  This is a simple skeleton python server that works on any of the devices
+  supported by balena. It also serves as a boilerplate project for you to get
+  started on building your fleet. Have fun! 
 post-provisioning: >-
   ## Usage instructions
 
@@ -25,4 +25,4 @@ data:
     - fincm3
     - beaglebone-black
     - jetson-tx2
-version: 2.0.3
+version: 2.1.0

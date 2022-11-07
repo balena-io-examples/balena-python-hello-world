@@ -1,4 +1,18 @@
 - commits:
+    - subject: "chore(deps): update dependency importlib-metadata to 5.0.0"
+      hash: 1d9820789fb57b2300c03046caec128c710d2ec1
+      body: |
+        Update importlib-metadata to 5.0.0
+
+        Update importlib-metadata from 4.8.3 to 5.0.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 2.1.0
+  date: 2022-11-07T12:12:49.843Z
+- commits:
     - subject: "patch: Replace gh_vipulgupta2048 org with balena-io-examples"
       hash: 07614829605cbb8337828ad4f341816ab8966a5a
       body: ""
@@ -49,7 +63,7 @@
 - commits:
     - subject: "major: Improve Getting Started experience for Python"
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: 2e66a25e952d0bb17dfdf88fde403389877581f7
 - commits:
@@ -60,7 +74,7 @@
 - commits:
     - subject: Use updated balena example projects links
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: 72b6c49ee06ff2319ecf2816505da8c1b0547bae
 - commits:
@@ -71,7 +85,7 @@
 - commits:
     - subject: Update flask & Dockerfile
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: 717b50bc91e14a9f5267e824d90c8f8ecbf22166
 - commits:
@@ -82,7 +96,7 @@
 - commits:
     - subject: Amend project structure to match other hello world
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: 525ce8b667710b6ea80ecbb56d0482555ee194ca
 - commits:
@@ -93,7 +107,7 @@
 - commits:
     - subject: Add README and balena.yml
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: bd2e06401b4f8cffdc42baa5a30d378248c960a2
 - commits:
@@ -104,7 +118,7 @@
 - commits:
     - subject: Add License
 - commits:
-    - body: null
+    - ? body
 - version: 1.0.1
 - date: 2021-10-18T21:07:48Z
 - commits:
@@ -114,7 +128,7 @@
 - commits:
     - subject: 'patch: Revert "Update Getting Started experience for Python"'
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: 161bc854f1807385e61c7adcdec2b16ccb12d3db
 - commits:
@@ -125,7 +139,7 @@
 - commits:
     - subject: Add repo.yml
 - commits:
-    - body: null
+    - ? body
 - version: 1.0.0
 - date: 2021-10-18T20:50:50Z
 - commits:
@@ -138,7 +152,7 @@
 - commits:
     - subject: "major: Improve Getting Started experience"
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: 0a31796ab4abf1824ae48d0debb7cf205da5b28e
 - commits:
@@ -149,7 +163,7 @@
 - commits:
     - subject: Use updated balena example projects
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: f13422a2072f3e54396ac27ee81c5306f0dccf3d
 - commits:
@@ -160,7 +174,7 @@
 - commits:
     - subject: Update flask & Dockerfile
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: 350bb30de0fec0a95b84407a6ec718b350f42074
 - commits:
@@ -174,7 +188,7 @@
 - commits:
     - subject: "Dockerfile.template: explicitly select debian stretch tag"
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: 64dd24096db5f48883476c9a0c5b2faf5d6c0917
 - commits:
@@ -189,7 +203,7 @@
     - subject: "requirements.txt: update to 0.12.3 as older versions have security
         vuln."
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: 4d9af7c0a02a2f0fcd80da7860dc8b63730937f2
 - commits:
@@ -203,7 +217,7 @@
 - commits:
     - subject: "Dockerfile.template: Update to balenalib run base, clean up a bit"
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: 837c8e9e937dea3e8237a106f30a7f562eed5f52
 - commits:
@@ -211,7 +225,7 @@
 - commits:
     - subject: Update Dockerfile.template
 - commits:
-    - body: null
+    - ? body
 - commits:
     - hash: 03bd445d5518555b648256ec974ce1f8fc65f74d
 - commits:
@@ -219,4 +233,4 @@
 - commits:
     - subject: Update Dockerfile.template
 - commits:
-    - body: null
+    - ? body
