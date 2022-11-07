@@ -1,4 +1,16 @@
 - commits:
+    - subject: "patch: Replace gh_vipulgupta2048 org with balena-io-examples"
+      hash: 07614829605cbb8337828ad4f341816ab8966a5a
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 2.0.3
+  title: ""
+  date: 2022-11-07T12:03:09.328Z
+- commits:
     - subject: "patch: Replace balenaCI with flowzone"
       hash: 210b804be02a7b603afead79e0ca9c04c2494888
       body: ""
