@@ -1,4 +1,14 @@
 - commits:
+    - subject: "patch: Add support for external contributors"
+      hash: 31cf2908c70388ef24ae8ab5cc6a56c723ea1e6d
+      body: ""
+      footer: {}
+      author: Vipul Gupta
+      nested: []
+  version: 2.0.4
+  title: ""
+  date: 2024-04-03T06:24:00.779Z
+- commits:
     - subject: "patch: Replace gh_vipulgupta2048 org with balena-io-examples"
       hash: 07614829605cbb8337828ad4f341816ab8966a5a
       body: ""
