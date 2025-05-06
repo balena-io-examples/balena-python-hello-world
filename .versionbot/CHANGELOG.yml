@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency click to v8.1.8
+      hash: 303c3308dfba9b8cca808850977dec4add850c82
+      body: |
+        Update click from 8.0.4 to 8.1.8
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.0.12
+  title: ""
+  date: 2025-05-06T17:54:06.468Z
+- commits:
     - subject: Update dependency MarkupSafe to v2.1.5
       hash: 3f2fc25d440be8f87cc1be761f19125602d95049
       body: |
