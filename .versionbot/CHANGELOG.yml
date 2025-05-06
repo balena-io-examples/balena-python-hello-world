@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency zipp to v3.19.1 [SECURITY]
+      hash: a2377fd6e4b8ceb0542329b09c5db867f9f51fcb
+      body: |
+        Update zipp from 3.6.0 to 3.19.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.0.8
+  title: ""
+  date: 2025-05-06T13:56:57.313Z
+- commits:
     - subject: Update dependency Jinja2 to v3.1.6 [SECURITY]
       hash: 4eaaaaa287e2d3070854ca6b0143cc34ce4fa2a0
       body: |
