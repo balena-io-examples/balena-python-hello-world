@@ -1,4 +1,16 @@
 - commits:
+    - subject: "patch: Replace base image with Docker Official base image"
+      hash: b8b4564cd120085e2dd37b507231c8cf0c71726e
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 2.0.6
+  title: ""
+  date: 2025-05-06T12:54:38.171Z
+- commits:
     - subject: "patch: Update base image to use latest debian"
       hash: baf3094231151c209c491d535384a9843ffbfc5d
       body: ""
