@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency importlib-metadata to v4.13.0
+      hash: 1708edf7b54026ba45ce057712b163bd75c6e5fd
+      body: |
+        Update importlib-metadata from 4.8.3 to 4.13.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.0.13
+  title: ""
+  date: 2025-05-06T18:57:29.530Z
+- commits:
     - subject: Update dependency click to v8.1.8
       hash: 303c3308dfba9b8cca808850977dec4add850c82
       body: |
