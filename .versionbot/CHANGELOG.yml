@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency zipp to v3.19.3
+      hash: bbb64f1dc261064e0e6609b89d4249eb2335894f
+      body: |
+        Update zipp from 3.19.1 to 3.19.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.0.9
+  title: ""
+  date: 2025-05-06T14:56:22.099Z
+- commits:
     - subject: Update dependency zipp to v3.19.1 [SECURITY]
       hash: a2377fd6e4b8ceb0542329b09c5db867f9f51fcb
       body: |
