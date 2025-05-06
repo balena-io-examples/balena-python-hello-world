@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency Jinja2 to v3.1.6 [SECURITY]
+      hash: 4eaaaaa287e2d3070854ca6b0143cc34ce4fa2a0
+      body: |
+        Update Jinja2 from 3.0.3 to 3.1.6
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.0.7
+  title: ""
+  date: 2025-05-06T13:06:43.039Z
+- commits:
     - subject: "patch: Replace base image with Docker Official base image"
       hash: b8b4564cd120085e2dd37b507231c8cf0c71726e
       body: ""
