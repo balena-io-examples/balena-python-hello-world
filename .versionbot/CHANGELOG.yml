@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency itsdangerous to v2.2.0
+      hash: 82e90983f83e662fb70883ab025ebfad81523c47
+      body: |
+        Update itsdangerous from 2.0.1 to 2.2.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.0.14
+  title: ""
+  date: 2025-05-06T19:54:10.803Z
+- commits:
     - subject: Update dependency importlib-metadata to v4.13.0
       hash: 1708edf7b54026ba45ce057712b163bd75c6e5fd
       body: |
