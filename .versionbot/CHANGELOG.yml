@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency MarkupSafe to v2.1.5
+      hash: 3f2fc25d440be8f87cc1be761f19125602d95049
+      body: |
+        Update MarkupSafe from 2.0.1 to 2.1.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.0.11
+  title: ""
+  date: 2025-05-06T16:56:55.147Z
+- commits:
     - subject: Update dependency Flask to v2.3.3
       hash: 7bc2c212432fe2e7344c954d2141c9cdbeaa040b
       body: |
