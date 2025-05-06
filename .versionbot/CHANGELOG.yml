@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency zipp to v3.21.0
+      hash: ffead12f9c888afcdffca7b64906fc252a8cd7a6
+      body: |
+        Update zipp from 3.19.3 to 3.21.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.0.15
+  title: ""
+  date: 2025-05-06T20:54:57.284Z
+- commits:
     - subject: Update dependency itsdangerous to v2.2.0
       hash: 82e90983f83e662fb70883ab025ebfad81523c47
       body: |
