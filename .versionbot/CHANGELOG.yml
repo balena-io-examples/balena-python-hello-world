@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency Flask to v2.3.3
+      hash: 7bc2c212432fe2e7344c954d2141c9cdbeaa040b
+      body: |
+        Update Flask from 2.0.3 to 2.3.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.0.10
+  title: ""
+  date: 2025-05-06T15:56:48.096Z
+- commits:
     - subject: Update dependency zipp to v3.19.3
       hash: bbb64f1dc261064e0e6609b89d4249eb2335894f
       body: |
