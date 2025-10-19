@@ -1,8 +1,42 @@
-# see more about dockerfile templates here: https://www.balena.io/docs/learn/develop/dockerfile/
-FROM python:3.13-slim-bookworm
+FROM python:3.12-alpine3.22
 
-# Set our working directory
+RUN apk add --no-cache grep dnsmasq curl wireless-tools
+        # freetype-dev \
+        # libjpeg-turbo-dev \
+        # gcc \
+        # musl-dev \
+        # linux-headers 
+
+# use latest version. If specific version is required, it should be provided as vX.Y.Z, e.g v4.11.37
+ARG VERSION="latest"
+
+# create /usr/src/app/ui directory where we will extract pre-built UI 
+WORKDIR /usr/src/app/ui
+
 WORKDIR /usr/src/app
+
+RUN \
+    export BASE_URL="https://github.com/balena-os/wifi-connect/releases" &&\    
+    DETECTED_ARCH=$(uname -m) &&\
+    case $DETECTED_ARCH in \
+        "aarch64") \
+            BINARY_ARCH_NAME="aarch64-unknown-linux-gnu" ;; \
+        "x86_64") \
+            BINARY_ARCH_NAME="x86_64-unknown-linux-gnu" ;;\
+        "armv7l") \
+            BINARY_ARCH_NAME="armv7-unknown-linux-gnueabihf" ;;\
+        *) \
+            echo >&2 "error: unsupported architecture ($DETECTED_ARCH)"; exit 1 ;; \ 
+    esac;\
+    if [ ${VERSION} = "latest" ]; then \
+        export URL_PARTIAL="latest/download" ; \
+    else \
+        export URL_PARTIAL="download/${VERSION}" ; \
+    fi; \
+    curl -Ls "$BASE_URL/$URL_PARTIAL/wifi-connect-$BINARY_ARCH_NAME.tar.gz" \
+    | tar -xvz -C  /usr/src/app/ && \
+    curl -Ls "$BASE_URL/$URL_PARTIAL/wifi-connect-ui.tar.gz" \
+    | tar -xvz -C  /usr/src/app/ui
 
 # Copy requirements.txt first for better cache on later pushes
 COPY requirements.txt requirements.txt
@@ -13,5 +47,7 @@ RUN pip install -r requirements.txt
 # This will copy all files in our root to the working  directory in the container
 COPY . ./
 
+COPY scripts/start.sh .
+
 # main.py will run when container starts up on the device
-CMD ["python","-u","src/app.py"]
+CMD ["sh", "./start.sh"]
