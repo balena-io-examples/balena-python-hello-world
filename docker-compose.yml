@@ -5,3 +5,7 @@ services:
     build: .
     ports:
       - "80:80"
+    volumes:
+      - /run/dbus:/host/run/dbus:ro
+    labels:
+      io.balena.features.dbus: "1"

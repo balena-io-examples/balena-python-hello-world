@@ -1,11 +1,10 @@
-FROM python:3.12-alpine3.22
+# see more about dockerfile templates here: https://www.balena.io/docs/learn/develop/dockerfile/
+FROM python:3.13-slim-bookworm
 
-RUN apk add --no-cache grep dnsmasq curl wireless-tools
-        # freetype-dev \
-        # libjpeg-turbo-dev \
-        # gcc \
-        # musl-dev \
-        # linux-headers 
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    dnsmasq \
+    wireless-tools
 
 # use latest version. If specific version is required, it should be provided as vX.Y.Z, e.g v4.11.37
 ARG VERSION="latest"
@@ -48,6 +47,8 @@ RUN pip install -r requirements.txt
 COPY . ./
 
 COPY scripts/start.sh .
+
+ENV DBUS_SYSTEM_BUS_ADDRESS unix:path=/host/run/dbus/system_bus_socket
 
 # main.py will run when container starts up on the device
 CMD ["sh", "./start.sh"]
