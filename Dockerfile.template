@@ -1,16 +1,28 @@
 # see more about dockerfile templates here: https://www.balena.io/docs/learn/develop/dockerfile/
-FROM python:3.13-slim-bookworm
+FROM python:3.13-slim-bookworm as builder
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
-# Set our working directory
+# Run uv in the builder
 WORKDIR /usr/src/app
 
-# Copy requirements.txt first for better cache on later pushes
-COPY requirements.txt requirements.txt
+ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy
 
-# pip install python deps from requirements.txt on the resin.io build server
-RUN pip install -r requirements.txt
+COPY uv.lock pyproject.toml ./
 
-# This will copy all files in our root to the working  directory in the container
+RUN uv sync --locked --no-install-project
+
+# Final image
+FROM python:3.12-slim-bookworm
+
+WORKDIR /usr/src/app
+
+COPY --from=builder /usr/src/app/uv.lock uv.lock.builder
+
+# Copy the required packages
+COPY --from=builder /usr/src/app/.venv .venv/
+ENV PYTHONPATH=/usr/src/app/.venv/lib/python3.13/site-packages
+
+# Copy the app
 COPY . ./
 
 # main.py will run when container starts up on the device
