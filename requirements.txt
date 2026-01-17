@@ -4,5 +4,5 @@ importlib-metadata==4.13.0
 itsdangerous==2.2.0
 Jinja2==3.1.6
 MarkupSafe==2.1.5
-Werkzeug==2.0.3
+Werkzeug>=2.3.7
 zipp==3.21.0
