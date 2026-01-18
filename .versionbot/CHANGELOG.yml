@@ -1,4 +1,15 @@
 - commits:
+    - subject: "patch: Fix Werkzeug version conflict with Flask 2.3.3 Signed-off-by:
+        Shaun Mulligan (@shaunmulligan) <shaun.mulligan@balena.io>"
+      hash: 578df113a1c8fe8f00822e647648ef3eb42e736c
+      body: ""
+      footer: {}
+      author: Shaun Mulligan
+      nested: []
+  version: 2.0.16
+  title: ""
+  date: 2026-01-18T23:32:01.490Z
+- commits:
     - subject: Update dependency zipp to v3.21.0
       hash: ffead12f9c888afcdffca7b64906fc252a8cd7a6
       body: |
