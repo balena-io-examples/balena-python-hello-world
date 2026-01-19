@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency zipp to v3.23.0
+      hash: 99df01f0a3d74464ec459868a9910990f61dc4b8
+      body: |
+        Update zipp from 3.21.0 to 3.23.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.0.18
+  title: ""
+  date: 2026-01-19T01:15:45.378Z
+- commits:
     - subject: Update dependency click to v8.3.1
       hash: 26a8718647c3f20bb03b30189b8e5f27ecd2155a
       body: |
