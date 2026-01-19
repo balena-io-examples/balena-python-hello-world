@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update python Docker tag to v3.14
+      hash: 46db14bf40cd9cccd671f7f3edbb2d6d87b2c3d0
+      body: |
+        Update python from 3.13 to 3.14
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.0.19
+  title: ""
+  date: 2026-01-19T02:40:22.010Z
+- commits:
     - subject: Update dependency zipp to v3.23.0
       hash: 99df01f0a3d74464ec459868a9910990f61dc4b8
       body: |
