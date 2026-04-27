@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency zipp to v3.23.1
+      hash: bcaa5b7c8484a046204ee5c74c821cc7b7b3254e
+      body: |
+        Update zipp from 3.23.0 to 3.23.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.0.21
+  title: ""
+  date: 2026-04-27T17:57:29.144Z
+- commits:
     - subject: Update dependency click to v8.3.3
       hash: 62f7a4cd366d88a7c82f82871692257dddc8098d
       body: |
