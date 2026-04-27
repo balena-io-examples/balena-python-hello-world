@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency click to v8.3.3
+      hash: 62f7a4cd366d88a7c82f82871692257dddc8098d
+      body: |
+        Update click from 8.3.1 to 8.3.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.0.20
+  title: ""
+  date: 2026-04-27T17:05:21.727Z
+- commits:
     - subject: Update python Docker tag to v3.14
       hash: 46db14bf40cd9cccd671f7f3edbb2d6d87b2c3d0
       body: |
