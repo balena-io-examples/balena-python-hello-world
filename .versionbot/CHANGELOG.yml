@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency click to v8.4.1
+      hash: cbef959dc5d9d2ed21142e7b4e78f93df9742cfc
+      body: |
+        Update click from 8.3.3 to 8.4.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.0.23
+  title: ""
+  date: 2026-06-03T23:13:28.170Z
+- commits:
     - subject: Pin dependencies
       hash: 780bdda13c4239c961d04a9cb255828d1abf061e
       body: |
