@@ -1,5 +1,5 @@
 # see more about dockerfile templates here: https://www.balena.io/docs/learn/develop/dockerfile/
-FROM python:3.14-slim-bookworm
+FROM python:3.14-slim-bookworm@sha256:a9bee15510a364124aa24692899d269835683b883de42f7ebec8c293cf679ccb
 
 # Set our working directory
 WORKDIR /usr/src/app
