@@ -1,5 +1,8 @@
 # see more about dockerfile templates here: https://www.balena.io/docs/learn/develop/dockerfile/
-FROM python:3.14-slim-bookworm@sha256:a9bee15510a364124aa24692899d269835683b883de42f7ebec8c293cf679ccb
+FROM python:3.14-slim-bookworm
+
+# Fail if the base image predates the eMudhra CA distrust (bookworm fix: 20250419~deb12u2)
+RUN dpkg --compare-versions "$(dpkg-query -W -f='${Version}' ca-certificates)" ge 20250419~deb12u2
 
 # Set our working directory
 WORKDIR /usr/src/app
@@ -8,7 +11,7 @@ WORKDIR /usr/src/app
 COPY requirements.txt requirements.txt
 
 # pip install python deps from requirements.txt on the resin.io build server
-RUN pip install -r requirements.txt
+RUN pip install --cert /etc/ssl/certs/ca-certificates.crt -r requirements.txt
 
 # This will copy all files in our root to the working  directory in the container
 COPY . ./
