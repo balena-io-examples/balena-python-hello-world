@@ -1,4 +1,22 @@
 - commits:
+    - subject: Ensure base image trusts no compromised eMudhra intermediates
+      hash: ade5ba3ed3465b2b17e1b93923d816b28bf09b86
+      body: |
+        Unpin the python base image digest, which predated the eMudhra
+        intermediate CA distrust, and fail the build if ca-certificates is
+        older than the bookworm fix (20250419~deb12u2).
+
+        Point pip at the system CA store, since pip's vendored certifi
+        predates the fix (2026.10.19).
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Sam Duffield
+      nested: []
+  version: 2.0.24
+  title: ""
+  date: 2026-10-21T15:38:31.855Z
+- commits:
     - subject: Update dependency click to v8.4.1
       hash: cbef959dc5d9d2ed21142e7b4e78f93df9742cfc
       body: |
